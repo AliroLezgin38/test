@@ -8,13 +8,14 @@
 
 header{
     background-color: #fff;
+    position: sticky;
 }
 /* --------------------------------------------------------------------------------- */
 
 .container {    
     max-width: 1500px; 
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 /* --------------------------------------------------------------------------------- */
 
@@ -121,7 +122,7 @@ header{
 main{
     background-image: url(https://preview.colorlib.com/theme/dento/img/bg-img/1.jpg);
     text-align: center;
-    background-repeat: repeat-y;
+    background-attachment: fixed;
     background-size: 100%;
 }
 /* --------------------------------------------------------------------------------- */
@@ -323,7 +324,7 @@ article p{
 .service-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 30px;
+    gap: 10vh;
 }
 
 .srv-icon {
@@ -515,6 +516,181 @@ article p{
     border-radius: 5px;
     margin: 40px 0;
 }
+/* --------------------------------------------------------------------------------- */
+
+.dentists{
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.dentists-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dentist-head{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Arial , sans-serif;
+}
+
+.under-dentist-head {
+    height: 4px;
+    background-color: #00aeff; 
+    border: none;
+    margin: 0 0 40px 0; 
+    display: block;
+    width: 40%;
+}
+
+
+.dcard{        
+    position: relative;
+    background: #e4e4e4;
+    margin-bottom: 80px;
+}
+
+.dent-img{
+    height: 40vh;
+}
+
+.dent-info{
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to right, #2c455dbe, #00012cbe);
+    bottom: 0;
+    padding: 5px 0;
+    color: white;
+}
+
+.dent-name{
+    font: 500 1.2em Helvetica;
+    padding: 5px 0;
+}
+.dent-job{
+    font: 500 .9em Arial ;
+    padding-bottom: 5px;
+}
+/* --------------------------------------------------------------------------------- */
+
+.bio{
+    background: linear-gradient(to right , #2c455dbe , #00012cbe);
+    text-align: left;
+    padding: 10vh 0;
+}
+
+.bio-profile{
+    padding: 5vh 0;
+}
+
+.bio-img{
+    border-radius: 50%;
+}
+
+.bio-info{
+    color: white;
+    font: 300 italic 1.2em Arial , sans-serif;
+    line-height: 1.8;
+    padding: 5px 0;
+}
+
+.bio-name{
+    font: normal 1.2em Arial , sans-serif;
+    padding: 10px 0;
+    color: white;
+}
+.bio-job{
+    color: white;
+    padding: 5px 0;
+}
+/* --------------------------------------------------------------------------------- */
+
+.news{
+    background-color: white;
+}
+.news-main{
+    padding: 10vh 0;
+}
+
+.news-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news-menu-head{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Arial , sans-serif;
+}
+
+.under-news-head{
+    height: 4px;
+    background-color: #00aeff; 
+    border: none;
+    margin: 0 0 40px 0; 
+    display: block;
+    width: 40%;
+    text-align: center ;
+}
+
+.news-cards{
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 1px #bbbbbb;
+    max-width: 500px;
+    margin: 30px 0;
+}
+
+.ncards{
+    display: inline-block;
+}
+
+.news-img{
+    max-width: 100%;
+}
+
+.news-info{
+    display: inline-block;
+    padding: 30px;
+    text-align: left;
+    height: max-content;
+}
+
+.news-head{
+    font: bold 1.4em Arial,sans-serif;
+    padding: 20px 0;
+    color: black;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.news-txt{
+    padding: 10px 0;
+    font: normal 1em/1.6 Arial , sans-serif;
+    color: #707070;
+}
+
+.news-icons{
+    padding: 10px 0;
+}
+
+.news-time , .news-comm{
+    font-size: .9em;
+    text-decoration: none;
+    color: #b6b6b6;
+    padding: 0 10px 0 0;
+}
+.news-time i, .news-comm i{
+    color: #00aeff;
+    padding: 0 20px 0 0;
+}
+
 
 /* --------------------------------------------------------------------------------- */
 
@@ -594,7 +770,6 @@ article p{
 
     .service-icons {
         grid-template-columns: repeat(3, 1fr); 
-        gap: 60px;
         place-items: center;
     }
     
@@ -643,7 +818,42 @@ article p{
         width: calc(80% + 30px);        
         margin: 0 15px;
     }
-        
+
+    .dent-cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .dcard{
+        margin: 5vh 2vw;
+    }
+
+    .bio-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bio-profile, .bio-txt{
+        margin: 0 20px;
+    }
+
+    .ncards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center ;
+    }
+    .news-cards{
+        margin: 20px 10px;
+        max-width: 350px;
+        min-width: 320px;
+    }        
+    .news-info{
+        height: max-content;
+        padding: 20px;
+    }
 }
 /* --------------------------------------------------------------------------------- */
 
@@ -660,5 +870,4 @@ article p{
         align-items: center;
         justify-content: space-around;  
     }
-    
 }
